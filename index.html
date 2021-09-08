@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  Esta es mi promera pagina HTML5
+  <meta charset="utf-8">
+  <meta name="author" content="TESE">
+  <meta name="description" content="la descripcion del autor">
+  <meta name="keywords" content="desarrollo de aplicaciones web">
+  <title> Pagina 01 HTML 5 </title>
+  <link rel="icon" href="img/snoppy.png">
+</head>
+
+<body>
+  <header> Cabecera de la pagina </header>
+  <nav> Barra de navegacion </nav>
+  <section>Seccion principal 
+    <header>
+  <h1>Este es el titulo de la eccion principal <h1>
+  </header>
+  <article>
+    <p> Esto es el contenido de la seccion principal </p>
+    <p><br>Esto es otro parrafo de la seccion principal </p>
+  </article>
+  <footer>Esto es el pie de mi seccion principal </footer>
+</section>
+
+<h1>titulo</h1>
+<h2>titulo</h2>
+<h3>titulo</h3>
+<h4>titulo</h4>
+<h5>titulo</h5>
+<h6>titulo</h6>
+<hr>
+<p><b> Aqui estoy en otra divicion del documento HTML5 </b></p>
+
+<hr>
+<p><b> Practic 1 Agregar una lista </b></p>
+<ol>
+  <li><b>carro</b></li>
+  <li><b>  moto</b></li>
+  <li><b>  avion</b></li>
+  <li><b>  barco </b></li>
+  <li><b>  moto </b></li>
+  <li><b>  autobus</b></li>
+</ol>
+<!--Tarea Practica basica de HTML5-->
+<!--1.- imágenes en esta seccion podemos ver la forma de insertar una imagen-->
+<hr>
+<h1><b> TAREA </b></h1>
+<img src="https://i.pinimg.com/236x/3b/57/1a/3b571aaa81ae5f13fd3fe2802442eba2.jpg"/>
+<!-- sI DESEAS MODIIFICAR LAS DIMENCIONES SE UTILIZAN LAS FUNCIONES img: width (ancho) y height (alto)-->
+<P>
+<img src="https://i.pinimg.com/236x/3b/57/1a/3b571aaa81ae5f13fd3fe2802442eba2.jpg"width="400", height="400"/>
+</P>
+<!--2.- imágenes con pie de pagina-->
+<P>
+  <img src="https://i.pinimg.com/originals/6f/de/46/6fde461c79e0fb7f3513a09bd44fd90c.png"alt="ALBERTO CC"/>
+  <figcaption>No se que poner asi que pongo memes</figcaption>
+</P>
+<!--3.- etiquetas para simular Código-->
+<p>...y así es como la función cambia el color del elemento o el de sus padres cuando el evento es disparado:</p>
+
+<pre><code>function cambiarColor(elemento, evento) {
+  if (typeof event != 'undefined') event.preventDefault();
+  if (typeof $(elemento).data('transparentBackground') == 'undefined' || $(elemento).data('transparentBackground')) {
+    $(elemento).css({backgroundColor: '#a3cd52'});
+    $(elemento).data('transparentBackground', 0);
+  } else {
+    $(elemento).css({backgroundColor: 'transparent'});
+    $(elemento).data('transparentBackground', 1);
+  }
+}
+</code></pre>
+<!--4.- anexo de tablas-->
+<p>
+<table>
+<thead>
+   <tr>
+     <th>cabecera</th>
+     <th>cabecera</th>
+     <th>cabecera</th>
+   </tr>
+</thead>
+<tfoot>
+   <tr>
+     <td>celda</td>
+     <td>celda</td>
+     <td>celda</td>
+   </tr>
+</tfoot>
+<tbody>
+   <tr>
+     <td>celda</td>
+     <td>celda</td>
+     <td>celda</td>
+   </tr>
+</tbody>
+</table>
+</p>
+
+<!--5.- etiquetas para crear medidas y estadísticas-->
+<p>
+</p>
+<!--6.- incorporación de audio-->
+<p>
+<audio src="audio.mp3">
+</audio>
+<!--En el tag 'audio' es posible incorporar algunos atributos de control del audio, como son:
+controls: Establece si tendrá la barra de navegación (play, stop, volumen...) o no
+autoplay: Indica si el audio se inicia automáticamente al cargar la página html
+loop: Establece si al acabar el audio, éste debe volver a empezar indefinidamente
+preload: Indica si el audio se empieza a cargar cuando el navegador carga la página html
+-->
+<!--EJEMPLO-->
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg"/>
+<source src="audio.ogg" type="audio/ogg"/>
+</audio>
+</p>
+
+<!--7.- incorporación de video-->
+<P>
+<P><video id="sampleMovie" src="HTML5Sample.mov"></video></P>
+<P>
+<video id="sampleMovie" width="640" height="360" preload controls>
+<source src="HTML5Sample_H264.mov" />
+<source src="HTML5Sample_Ogg.ogv" />
+<source src="HTML5Sample_WebM.webm" />
+</video>
+</P>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5xGqUompVVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</P>
+
+<!--8.- incorporación de iframe-->
+<P>
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+</P>
+<!--9.- etiqueta div-->
+<P>
+<div style="color: blue;">
+<h2> Ejemplo de div y span </h2>
+ <p>
+   Esto es un párrafo dentro de un div,
+   <span style="color: red;"> y esto un span dentro de un párrafo.</span>
+ </p>
+</div>
+</P>
+</body>
+</html>
